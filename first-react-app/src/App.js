@@ -1,27 +1,35 @@
-import logo from './logo.svg';
+// src/App.js
+ 
+import React, { useState } from 'react';
 import './App.css';
-
+ 
 function App() {
+
+  // useState hook to manage state in the component
+
+  const [count, setCount] = useState(0);
+ 
+  // Function to increment the count
+
+  const incrementCount = () => {
+
+    setCount(count + 1);
+
+  };
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          First React App by <code>Faris</code>
+<div className="App">
+<header className="App-header">
+<h1>Welcome to My React App</h1>
+<p>You clicked {count} times</p>
+<button onClick ={incrementCount}>Click me</button>
+</header>
+</div>
 
-        </p>
-        <a
-          className="App-link"
-          href="
-          https://www.facebook.com/faris.ahmed.399"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Faris Mohammed
-        </a>
-      </header>
-    </div>
   );
-}
 
+}
+ 
 export default App;
+
+ 
