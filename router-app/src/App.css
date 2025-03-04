@@ -1,0 +1,49 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #9ec6e8; /* Light blue background */
+    color: #333;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background: #ff4500; /* OrangeRed background */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 30px; /* Added spacing */
+}
+
+nav a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+nav a:hover {
+    background: #ff6347; /* Tomato background on hover */
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Page Content */
+h1 {
+    margin-top: 50px;
+    font-size: 36px;
+    color: #ff4500; /* OrangeRed color */
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
