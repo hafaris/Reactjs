@@ -1,0 +1,41 @@
+/* Home Page Styling */
+.page {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Header */
+  .page h1 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  /* Paragraph */
+  .page p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .page {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .page h1 {
+      font-size: 1.8rem;
+    }
+  
+    .page p {
+      font-size: 1rem;
+    }
+  }
+  
