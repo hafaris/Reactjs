@@ -4,11 +4,11 @@ import Login from "./pages/Login";
 import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
 import Cart from "./pages/Cart";
+import Payment from "./pages/Payment";
 import "./App.css";
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (product) => {
@@ -25,7 +25,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Login onLogin={() => setIsAuthenticated(true)} />} />
         <Route path="/products" element={isAuthenticated ? <Products addToCart={addToCart} /> : <Navigate to="/" />} />
-        <Route path="cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} />} />
+        <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} />} />
+        <Route path="/payment" element={isAuthenticated ? <Payment /> : <Navigate to="/" />} />
       </Routes>
     </Router>
   );
