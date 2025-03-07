@@ -1,0 +1,56 @@
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.toggle-section {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.text {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.api-section {
+  margin-top: 30px;
+}
+
+.api-section h2 {
+  color: #444;
+}
+
+.api-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.api-section li {
+  background: #e9ffc1;
+  margin: 10px auto;
+  padding: 15px;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.api-section li strong {
+  color: #007bff;
+}
