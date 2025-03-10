@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #6200ea;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .toggle-btn {
+    background-color: #03dac6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #018786;
+  }
+  
